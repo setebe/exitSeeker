@@ -1,5 +1,5 @@
 const axios = require('axios')
-const SocksAgent = require('axios-socks5-agent')
+// const SocksAgent = require('axios-socks5-agent')
 const https = require('https');
 
 const agent = new https.Agent({  
@@ -8,7 +8,7 @@ const agent = new https.Agent({
     host: '127.0.0.1',
     port: '24000'
   });
-  axios.get('https://www.amazon.com/easuntec-Unicorn-Lights-Changing-Dimmable/dp/B07TQM226B/', { httpsAgent: agent }).then(res=>{
+  axios.get('amazon.com/dp/B00X17TCMG', { httpsAgent: agent }).then(res=>{
       console.log(res.data)
   }).catch(e=>{
       console.error(e)
