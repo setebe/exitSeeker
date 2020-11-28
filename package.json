@@ -1,0 +1,25 @@
+{
+  "name": "exitSeeker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "axios-socks5-agent": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/setebe/exitSeeker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/setebe/exitSeeker/issues"
+  },
+  "homepage": "https://github.com/setebe/exitSeeker#readme"
+}
