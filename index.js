@@ -8,7 +8,7 @@ const agent = new https.Agent({
     host: '127.0.0.1',
     port: '24000'
   });
-  axios.get('https://amazon.com/dp/B00X17TCMG', { headers: { 'User-Agent': 'Console app' }, httpsAgent: agent }).then(res=>{
+  axios.get('https://amazon.com/dp/B00X17TCMG', { headers: { 'User-Agent': 'Console app' }, httpsAgent: agent, maxRedirects: 0 }).then(res=>{
       console.log(res.data)
   }).catch(e=>{
       console.error(e)
