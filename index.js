@@ -5,8 +5,8 @@ const https = require('https');
 const agent = new https.Agent({  
     rejectUnauthorized: false,
     protocol: 'https',
-    host: '127.0.0.1',
-    port: '24000'
+    host: 'localhost',
+    port: '9090'
   });
   axios.get('https://www.amazon.com/dp/B00X17TCMG', { withCredentials: true, httpsAgent: agent, maxRedirects:20 }).then(res=>{
       console.log(res.data)
