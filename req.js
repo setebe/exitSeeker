@@ -1,4 +1,4 @@
-const request = require('request');
+const request = require('request').defaults({rejectUnauthorized:false});
 request.get({
   url: 'https://www.amazon.com/dp/B00X17TCMG',
   proxy: 'https://127.0.0.1:24000'
